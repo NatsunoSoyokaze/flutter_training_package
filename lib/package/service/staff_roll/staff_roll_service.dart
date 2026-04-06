@@ -20,8 +20,8 @@ class StaffRollService {
   }
 
   Future<List<Staff>> loadStaffs() async {
-    final String jsonString =
-    await rootBundle.loadString('assets/staff/staffs.json');
+    final String jsonString =assets
+    await rootBundle.loadString('/staff/staffs.json');
 
     final List<dynamic> jsonList = json.decode(jsonString);
 
